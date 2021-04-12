@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basha Khujchi</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='default.css') }}">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="{{ url_for('home') }}">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="home#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/dash.jpg') }}">
+		</div>
+		
+		<h3>Online Travel and Tour Agency</h3>
+
+		<p>This was a project I started back in January 2019 when I started to learn python and developed a project on a micro framework like flask. 
+			This was my Senior Design Project.
+		<br>
+		<br>
+		A web application which resides an AI Base Visual Recognition System. In which different AI based visual recognize system can be run behind the scene that detects red blood cell diseases.
+		<br>
+		<br>
+		An AI model has already been developed that detects Malaria with the accuracy of 97%. In the background, the microscopic image is then directly input to the system. As output every infected & non-infected cell are labeled as their respective diseases and provide a quantitative understanding of level of severity. 
+		<br>
+		<br>
+		After getting the identity from admin a pathologist can sign up in this system and then will get access to the pathologist dashboard. Pathologists are responsible for generating the blood images from blood via microscope. And they can Add/View/Edit/Delete patient records as well.
+		<br>
+		<br>
+		After completing a test of a patient system will generate a report & save it to the database for future purpose.
+		<br>
+		<br>
+		I worked on this system for 1 years although my course was finished within 8 months.</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- Flask</li>
+			<li>- HTML/CSS</li>
+			<li>- Bootstrap 4</li>
+			<li>- Javascript</li>
+			<li>- Postgres</li>
+			<li>- SQLAlchemy</li>
+			<li>- wkhtmltopdf - PDF generator</li>
+		</ul>
+
+
+		<h5>Laboratory Admin Dashboard</h5>
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/lab-dash.jpg') }}">
+		</div>
+
+		<h6>Sample ID Form</h5>
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/sample-form.jpg') }}">
+		</div>
+
+		<h5>Results Input Fields</h5>
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/results.jpg') }}">
+		</div>
+
+		<h5>PDF Report (Automaticly Generated)</h5>
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/pdf-report.jpg') }}">
+		</div>
+
+		<h5>Customer Dashboard</h5>
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/customer-dash.jpg') }}">
+		</div>
+
+	</div>
+
+</body>
+</html>

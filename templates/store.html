@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Decorator</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='default.css') }}">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="{{ url_for('home') }}">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="home#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/store/collage1.jpg') }}">
+		</div>
+		
+		<h3>A Modern Online Store for Home Decoration</h3>
+
+		<p>This was a project I started back in 2020 when I started to learn Django framework and this was my 2nd project on Django framework. I developed this project within one month and 
+			I really wanted to make a fully functional E-Commerce site something like this project. This was one of my personal project.
+		<br>
+		<br>
+		A web application which is a fully functional E-Commerce website with user and guest checkout capabilities. There are two types of checkout system
+		one is for logged in user and another is for guest user. Checkout functionality also available with paypal payment system.
+		<br>
+		<br>
+		The main focus of this eCommerce project is to integrate guest checkout ability along with user accounts.
+		Forcing user to create an account for purchasing something can affect sales significantly. 
+		<br>
+		<br>
+		<b>Authenticated User Vs Guest Checkout</b>
+		<br>
+		Authenticated users & guests have the same process with slight differences. Both users have the ability to add product in wishlist but user with account can see previous purchases 
+		as well as pending product while guests will have items stored in cookies and will have the option to create account after a successful purchase.
+		<br>
+		<br>
+		<b>Authenticated User Process</b>
+		<br>
+		Add item to cart → Edit Order → Checkout
+		View pending and previous orders + Order details 
+		<br>
+		<br>
+		<b>Guest Checkout Process</b>
+		<br>
+		Add item to cart → Edit Order → Checkout
+		Create Account to view Order
+		<br>
+		<br>
+		<b>Apply Cupon</b>
+		<br>
+		Registered users have cupon facility, if the user is registered & has a valid cupon then that user will get discount on total amount.
+		<br>
+		<br>
+		After completing checkout process an confirmation email will be sent to user email.
+		</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- Django</li>
+			<li>- HTML/CSS</li>
+			<li>- Bootstrap</li>
+			<li>- Javascript</li>
+			<li>- Docker</li>
+			<li>- Heroku</li>
+			<li>- Postgres</li>
+		</ul>
+
+
+		<h5>Products</h5>
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/store/3.PNG') }}">
+		</div>
+
+		<h6>Product Details</h5>
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/store/5.PNG') }}">
+		</div>
+
+		<h6>Cart Items</h5>
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/store/4.PNG') }}">
+		</div>
+
+		<h6>Wish Items</h5>
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/store/6.PNG') }}">
+		</div>
+
+		<h5>Checkout & PayPal Payment</h5>
+		<div class="img-container">
+			<img src="{{ url_for('static', filename='images/store/collage2.jpg') }}">
+		</div>
+	</div>
+
+</body>
+</html>
