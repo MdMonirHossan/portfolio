@@ -7,6 +7,9 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route("/eel")
+def eel():
+    return render_template('eel.html')
 
 @app.route("/rbc")
 def rbc():

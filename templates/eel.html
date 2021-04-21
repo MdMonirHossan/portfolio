@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EEL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='default.css') }}">
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="{{ url_for('home') }}">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="home#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/eel/collage1.jpg') }}" style="max-height: 900px;max-height: 700px;object-fit: contain;">
+		</div>
+		<h3>A communicative english learning app > ঘরে বসে ইংরেজি শিখুন সহজে</h3>
+		<p>
+			I joined this company in October 2020 as a Jr. software engineer when the company started its journey. At that time the company 
+            did not have any backend system & mobile application. And I had to build the entire infrastructure of the backend system in just 
+			3 months from scratch.
+			<br> <br>
+			My job was to build the whole backend system from the scratch on Django framework. <br><br>
+			The main purpose of English Essence was to build a communicative english learning app. That app needs a backend system, so I had to 
+			make a backend system with 100+ API endpoint using Django Rest Framework. <br> <br>
+			I had to make a web frontend which is nothing but teacher's Dashboard where teacher's can design their course & upload necessary content 
+			for every course and lot of quizzes as well. <br><br>
+			The system has the user types: <br>
+				- Super User <br>
+				- Teacher <br>
+				- Student <br>
+			Those three types user has different privilege.
+		</p>
+		<br>
+		<p>
+		English Essence is a communicative English learning app. There are 100s of different types of quizzes so that anyone
+        can practice them on the go along with 100s of video and audio lectures. There are also a group communication system which will allow
+        anyone to keep practicing English with his/her peers. English Essence is the largest English Learning Platform in Bangladesh.
+        </p>
+        <h5>Some of Mobile App Feature</h5>
+        <p>
+        1. Short lessons with audios and videos <br>
+        2. Great teaching plan where anyone can learn English by just practicing. <br>
+        3. More than 10 types of Quizzes types to help anyone learn English Faster. <br>
+        4. A communicative group for the same level of English users, which promotes interaction between peers. <br>
+		</p>
+		</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- Django</li>
+			<li>- Django Rest Framework</li>
+			<li>- HTML/CSS</li>
+			<li>- Bootstrap</li>
+			<li>- Javascript</li>
+			<li>- JQuery</li>
+            <li>- AdminLTE</li>
+			<li>- Docker</li>
+			<li>- Heroku</li>
+			<li>- Postgres</li>
+		</ul>
+		<h5>Mobile App</h5>
+        <section class="s1">
+            <div class="main-container">
+                <h3 style="text-align: center;">Mobile App Screens</h3>
+                <div class="post-wrapper">
+                    <div class="post">
+                        <img src="{{ url_for('static', filename='images/eel/app/1.png') }}">
+                    </div>
+                    <div class="post">
+                        <img src="{{ url_for('static', filename='images/eel/app/2.png') }}">
+                    </div>
+                    <div class="post">
+                        <img src="{{ url_for('static', filename='images/eel/app/3.png') }}">
+                    </div>
+                    <div class="post">
+                        <img src="{{ url_for('static', filename='images/eel/app/4.png') }}">
+                    </div>
+                    <div class="post">
+                        <img src="{{ url_for('static', filename='images/eel/app/5.png') }}">
+                    </div>
+                    <div class="post">
+                        <img src="{{ url_for('static', filename='images/eel/app/6.png') }}">
+                    </div>
+                </div>
+            </div>
+        </section>
+		<h5>Analytic Dashboard</h5>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/eel/1.PNG') }}">
+		</div>
+		<h6>Teacher's Dashboard</h5>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/eel/2.PNG') }}">
+		</div>
+        <h6>Admin Dashboard</h5>
+        <div class="">
+            <img src="{{ url_for('static', filename='images/eel/collage4.jpg') }}">
+        </div>
+		<h6>Notification Panel & Scheduler Notification</h5>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/eel/collage2.jpg') }}">
+		</div>
+		<h6>Swagger & OpenAPI Documentation for API</h5>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/eel/collage3.jpg') }}">
+		</div>
+		<h5>XL Sheet Manual Documentation for API</h5>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/eel/7.PNG') }}">
+		</div>
+	</div>
+
+</body>
+</html>
