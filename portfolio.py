@@ -11,6 +11,14 @@ def home():
 def eel():
     return render_template('eel.html')
 
+@app.route("/rokomari")
+def rokomari():
+    return render_template('rokomari.html')
+
+@app.route("/cwork")
+def cwork():
+    return render_template('cwork.html')
+
 @app.route("/rbc")
 def rbc():
     return render_template('rbc.html')

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monir | Rokomari Bot</title>
+	<link rel="icon" type="image/JPG" href="{{ url_for('static', filename='images/Monir.JPG') }}"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='default.css') }}">
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="{{ url_for('home') }}">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="home#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container" align="justify" style="text-align:justify">
+		<br>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/bot_1.jpg') }}" style="max-height: 900px;max-height: 700px;object-fit: contain;">
+		</div>
+		<h3>AI base automated customer chatbot</h3>
+		<p>
+			Build contextual AI assistants that really help customers. Automate whole FAQ of Rokomari & customer care service partially. Customer will get a great user experience and get their answers quickly. Beside FAQ customer can track their order as well as can connect with live agent.<br><br>
+			The chatbot was built using Rasa 1.x framework.
+			<br> <br>
+			My job was to build a chatbot that will automate entire FAQ section of rokomari as well as connect their backend system to the bot so that customer can track their order status, can connect to live agent etc. Finally make the bot available for public use through rokomari Facebook page.
+			
+		</p>
+		<br>
+        <h5>Development</h5>
+        <p>
+			<ul>
+				<li>- Create more than 6000 query for NLU.</li>
+				<li>- Create more than 3000 stories for NLU.</li>
+				<li>- Integrate the bot with rokomari backend.</li>
+				<li>- Automate complete FAQ's.</li>
+				<li>- Integrate rokomari API endpoints in the bot to track order & to get order details, submit user query to live agent, submit order to live agent, ask for particular product details .</li>
+				<li>- Write documents for all NLU queries & stories as well as FB API in XL.</li>
+				<li>- Comment all custom actions or code.</li>
+				<li>- Generate documentation for custom python code.</li>
+				<li>- Communicate with devOps and customer service team for making the bot
+			available for public use from Facebook page</li>
+			</ul> 
+		</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Rasa 1.x</li>
+			<li>- Python</li>
+			<li>- Facebook API</li>
+			<li>- HTML/CSS</li>
+			<li>- Bootstrap</li>
+			<li>- Javascript</li>
+			<li>- JQuery</li>
+			<li>- Docker</li>
+			<li>- Docker Compose</li>
+			<li>- Heroku</li>
+		</ul>
+		<h5>Live Chats</h5>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/rokomari/chat_sc.jpg') }}">
+		</div>
+		<h5>Intent Prediction Confidence Distribution</h5>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/rokomari/hist.png') }}">
+		</div>
+		<h5>Intent Confution Matrix</h5>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/rokomari/confmat.png') }}">
+		</div>
+		<h5>API Documentation</h5>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/rokomari/api_docs.png') }}">
+		</div>
+		<h5>Row Data</h5>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/rokomari/row_data.png') }}">
+		</div>
+		<h5>Code Documentation</h5>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/rokomari/code_docs.jpg') }}">
+		</div>
+	</div>
+
+</body>
+</html>

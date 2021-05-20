@@ -2,11 +2,36 @@
 <html>
 <head>
 	<title>MD. Monir Hossan</title>
+	<link rel="icon" type="image/JPG" href="{{ url_for('static', filename='images/Monir.JPG') }}"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='default.css') }}">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+	<style type="text/css">
+	    /*.popover{
+	        max-width:700px;
+	        background-color: #15202B;
+	    }*/
+	    .download-btn {
+		    display: block;
+		    max-width: 200px;
+		    height: 20px;
+		    background: #4E9CAF;
+		    padding: 10px;
+		    text-align: center;
+		    border-radius: 5px;
+		    color: white;
+		    font-weight: bold;
+		    line-height: 25px;
+		}
+	</style>
 </head>
 <body>
 
@@ -28,6 +53,7 @@
 					<ul id="navigation">
 						<li><a href="home#education">Education</a></li>
 						<li><a href="home#contact">Contact</a></li>
+						<li><a target="_blank" href="{{ url_for('static', filename='resume/Md_Monir_Hossan_update.pdf')}}">Resume</a></li>
 					</ul>
 				</div>
 				<div class="left-column">
@@ -47,8 +73,7 @@
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
 							<h3>What I Do</h3>
-							<p>I am working as a software engineer, and I have professional experience in software engineering field.
-								Also I have some experience on building customer chatbot using Rasa.</p>
+							<p align="justify" style="text-align:justify">I am working as a software engineer, and I have professional experience working in 3 startup companies in software engineering field as well as building conversational AI chatbot using Rasa.
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
 						</div>
@@ -62,15 +87,16 @@
 		<div class="main-container">
 
 			<div class="about-wrapper">
-				<div class="about-me">
+				<div class="about-me" align="justify" style="text-align:justify">
 					<h4>More about me</h4>
-					<p>I am a self-driven, motivated and passionate individual with professional experiences in software engineering field.</p>
+					<p>I am a self-driven, motivated and passionate individual with more than 1 year of professional experiences in software engineering field.</p>
+					<p>My professional career started by joining in a startup company. Now I have experience working in 3 startup companies and working in these startups I have gained most of experience. I know how to work with a lot of pressure in a short period of time.</p>
+					<p>You are getting everything that I learned from 3 startups. Also if I can understand the work & the functionality I can make that work successful. I also have experience building AI base customer chatbot in Rasa framework.</p>
 					<p>I always eager to build new thing that give me much pleasure as well as explore new technology. Also
 						want to apply my technical, analytical, interpersonal and leadership skills and knowledge.</p>
 					<hr>
 					<h4>EXPERTISE</h4>
-					<p> Backend developer with primary focus on Django & Rasa: 
-						<a target="_blank" href="{{ url_for('static', filename='resume/Md_Monir_Hossan.pdf')}}">Download Resume</a>
+					<p> Backend developer with primary focus on Python, Django, DjangoRestFramework, Flask & Rasa.
 					</p>
 					<div id="skills">
 						<ul>
@@ -79,11 +105,11 @@
 							<li>Django</li>
 							<li>Django RestFramework </li>
 							<li>Rasa</li>
+							<li>Flask</li>
 							<li>GitHub</li>
 						</ul>
 						<ul>
 							<li><h6 style="margin:0 0;">Intermediate</h6></li>
-							<li>Flask</li>
 							<li>HTML/CSS</li>
 							<li>Javascript</li>
 							<li>Jquey</li>
@@ -115,18 +141,31 @@
 					<br>
 					<a target="_blank" href="https://www.linkedin.com/in/md-monir-hossan">LinkedIn: @MdMonir</a>
 					<!-- <img id="social_img" src="{{ url_for('static', filename='images/follow.jpg') }}"> -->
-					<h3>Leadership & Other Skills</h3>
-					<p>Former Sub-Executive in NSU ACM Student Chapter.</p>
-					<p>In-Charge of TECNOVATION event in 2018.</p>
-					<p>Lead all academic projects as team leader.</p>
-					<hr>
 					<h4>Professional Experience</h4>
 					<div id="professionals">
-						<p><b>English Essence Ltd</b><br> Software Engineer (October 2020 – Present)</p>
-						<p><b>Rokomari</b><br> Customer Chat Bot (Project Based)</p>
-						<p><b>cWork Microjob Ltd</b><br> Jr. Software Engineer (March 2020 – June 2020)</p>
-						<p><b>Yoda</b><br> Web Designer & IOS Intern (November 2018 – August 2019)</p>
-					</div>
+						<a href="{{url_for('eel')}}"><p><u><b>Software Engineer (Contractual)</b></u><br>English Essence Ltd | (October 2020 – May 2021)</p></a>
+						<a href="{{url_for('rokomari')}}"><p><u><b>Customer Chat Bot (Project Based)</b></u><br>Rokomari</p></a>
+						<a href="{{url_for('cwork')}}"><p><u><b>Jr. Software Engineer</b></u><br>cWork Microjob Ltd | (March 2020 – June 2020)</p></a>
+						<p><b>Web Designer & IOS Intern</b><br>Yoda | (November 2018 – August 2019)</p>
+					</div><hr>
+					<h3>Leadership & Other Skills</h3>
+					<p>
+					 - Former Sub-Executive in NSU ACM Student Chapter.<br>
+					 - Very good work ethics and time management.<br>
+					 - Able to work MAC, Windows, Linux Operating system.<br>
+					 - Able to work on different circumstances effectively and efficiently.<br>
+					 - Good troubleshooting capability.<br>
+					 - Very loyal to the company.<br>
+					 - Idea generation capability.<br>
+					 - Very good at writing nice & clean code.<br>
+					 - Good oral and writing English ability.<br>
+					 - Ability to take heavy workload.<br>
+					 - Good communication skill.<br>
+					 - In charge of TECHNOVATION event that was held at NSU in 2018.<br>
+					 - Lead all academic projects as team leader.<br>
+					 - Very good at building customer chatbot.<br>
+					 - Primary knowledge of machine learning.
+					</p>
 					
 				</div>
 			</div>
@@ -159,7 +198,20 @@
 							<h6 class="post-title">Rokomari - An automated customer chatbot </h6>
 							<p class="post-intro">Customer will get a great user experience and get their
 								answers quickly. Beside FAQ customer can track their order as well as can connect with live agent.</p>
-								<a target="_blank" href="https://www.messenger.com/t/110127826121225/?messaging_source=source%3Apages%3Amessage_s" >Take a Look</a>
+								<a href="{{url_for('rokomari')}}">Read More</a>
+								<a target="_blank" href="https://www.messenger.com/t/110127826121225/?messaging_source=source%3Apages%3Amessage_s" style="float: right;">Take a Look</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="{{ url_for('static', filename='images/cwork_logo.png')}}">
+						<div class="post-preview">
+							<h6 class="post-title">cWork Microjob Limited - A Micro Job Platform in Bangladesh</h6>
+							<p class="post-intro">cWork is a micro job platform, which is a marketplace for gigs. Also cWork Microjob Limited is expertise in conversational AI.</p><br>
+								<a href="{{url_for('cwork')}}">Read More</a>
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=com.couponapp.couponapp.cwork&hl=en&gl=US" style="float: right;">Take a Look</a>
 						</div>
 					</div>
 				</div>
@@ -250,7 +302,8 @@
 					<p><b>Address :</b>Babu’s House, Boodhua Para,</p>
 					<p>Bashundhara R/A Gate, Dhaka 1212.</p>
 					<p><b>Email: </b>mdraju01820@gmail.com</p>
-					<p><b>Contact :</b> +8801701050966</p> 
+					<p><b>Contact :</b> +8801701050966</p> <br>
+					<a class="download-btn" target="_blank" href="{{ url_for('static', filename='resume/Md_Monir_Hossan_update.pdf')}}">Download Resume</a>
 				</div>
 				<div class="right-column" style="display: block;">
 					<a name="education"></a>
@@ -262,7 +315,18 @@
 				</div>
 			</div>
 		</div>
+		<br><br><br>
 	</section>
 	<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+	<!-- <script type="text/javascript">
+		$(document).ready(function() {
+		   $('[data-toggle="popover"]').popover({
+		      placement: 'top',
+		      trigger: 'hover',
+		      container: 'body',
+		      html: true
+		   });
+		});
+	</script> -->
 </body>
 </html>

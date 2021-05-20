@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monir | cWork</title>
+	<link rel="icon" type="image/JPG" href="{{ url_for('static', filename='images/Monir.JPG') }}"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='default.css') }}">
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="{{ url_for('home') }}">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="home#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container" align="justify" style="text-align:justify">
+		<br>
+		<div class="">
+			<img src="{{ url_for('static', filename='images/cwork_1.jpg') }}" style="max-height: 900px;max-height: 700px;object-fit: contain;">
+		</div>
+		<h3>cWork Microjob Limited - A Micro Job Platform in Bangladesh</h3>
+		<p>
+			cWork is a micro job platform, which is a marketplace for gigs. 
+			<br><br>
+			Also cWork Microjob Limited is expertise in conversational AI.
+			
+		</p>
+		<br>
+        <h5>My Responsiblity in cWork</h5>
+        <p>
+			<ul>
+				<li>- Maintaining a previously created backend system and fixing bugs that were developed with Django Rest Framework for clients.</li>
+				<li>- Add new functionality to the backend system.</li>
+				<li>- Create and Integrate new API's into customer Chatbot.</li>
+				<li>- Maintaining a previously created dashboard system for clients and fixing bugs that were developed with Angular framework.</li>
+				<b>Doctorapa (Not Available)</b>
+				<li>- The DoctorApa is a chatbot that replies to common questions about Covid-19 related information from authentic sources to prevent misinformation.</li>
+				<li>- Also provide all covid-19 case related information for entire world and country wise such as total number of infected, deaths, recovered, new infected, new recovered etc.</li>
+				<b>Doctorapa FB Page Link : </b> https://www.facebook.com/mycareai/?ref=page_internal
+			</ul> 
+		</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Rasa 1.x</li>
+			<li>- Python</li>
+			<li>- Facebook API</li>
+			<li>- HTML/CSS</li>
+			<li>- Bootstrap</li>
+			<li>- Javascript</li>
+			<li>- JQuery</li>
+			<li>- Docker</li>
+			<li>- Docker Compose</li>
+			<li>- Heroku</li>
+			<li>- Angular</li>
+		</ul>
+	</div>
+
+</body>
+</html>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>EEL</title>
+	<title>Monir | EEL</title>
+	<link rel="icon" type="image/JPG" href="{{ url_for('static', filename='images/Monir.JPG') }}"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
@@ -36,12 +37,17 @@
 		</ul>
 	</div>
 
-	<div class="main-container">
+	<div class="main-container" align="justify" style="text-align:justify">
 		<br>
 		<div class="">
 			<img src="{{ url_for('static', filename='images/eel/collage1.jpg') }}" style="max-height: 900px;max-height: 700px;object-fit: contain;">
 		</div>
 		<h3>A communicative english learning app > ঘরে বসে ইংরেজি শিখুন সহজে</h3>
+		<p>
+		English Essence is a communicative English learning app. There are 100s of different types of quizzes so that anyone
+        can practice them on the go along with 100s of video and audio lectures. There are also a group communication system which will allow
+        anyone to keep practicing English with his/her peers. English Essence is the largest English Learning Platform in Bangladesh.
+        </p>
 		<p>
 			I joined this company in October 2020 as a Jr. software engineer when the company started its journey. At that time the company 
             did not have any backend system & mobile application. And I had to build the entire infrastructure of the backend system in just 
@@ -58,12 +64,6 @@
 				- Student <br>
 			Those three types user has different privilege.
 		</p>
-		<br>
-		<p>
-		English Essence is a communicative English learning app. There are 100s of different types of quizzes so that anyone
-        can practice them on the go along with 100s of video and audio lectures. There are also a group communication system which will allow
-        anyone to keep practicing English with his/her peers. English Essence is the largest English Learning Platform in Bangladesh.
-        </p>
         <h5>Some of Mobile App Feature</h5>
         <p>
         1. Short lessons with audios and videos <br>
@@ -71,8 +71,26 @@
         3. More than 10 types of Quizzes types to help anyone learn English Faster. <br>
         4. A communicative group for the same level of English users, which promotes interaction between peers. <br>
 		</p>
+		<h5>Backend system Development</h5>
+		<p>
+			- Built entire backend system from scratch. Designed database and
+			algorithm for the advanced quiz system as well as communicative
+			group. Design & Create more than 100 API endpoints for mobile app.
+			Integrate Firebase for media storage & notification system, integrate
+			celery & celery beat for background and period tasks. Integrate AWS S3
+			for DB backup, payment gateway adaptation, integrate Sendgrid for
+			mail system.<br><br>
+			- Design a dashboard with Teacher's & Admin user privilege where
+			teacher's can upload all course materials and admin can review, verify,
+			add new teacher, banned & delete users, send & set scheduler
+			notification, take backup and many more.<br><br>
+			- Use Docker for building project image & push to the Heroku container
+			registry. Use PostgreSQL as database.<br><br>
+			- Make all API endpoints documented using Swagger & OpenAPI. Also
+			write manual documentation for all API endpoints in XL sheet.
+			code comment & write entire development & production process in
+			README.md file
 		</p>
-
 		<h5>Technologies:</h5>
 		<ul>
 			<li>- Python</li>
@@ -137,7 +155,7 @@
 		<div class="">
 			<img src="{{ url_for('static', filename='images/eel/7.PNG') }}">
 		</div>
-	</div>
+	</div><br><br><br>
 
 </body>
 </html>
