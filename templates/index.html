@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='default.css') }}">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -19,6 +21,38 @@
 	        max-width:700px;
 	        background-color: #15202B;
 	    }*/
+	    .fa {
+		  padding: 10px;
+		  font-size: 20px;
+		  width: 40px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 5px 2px;
+		}
+
+		.fa:hover {
+		    opacity: 0.7;
+		}
+		.fa-skype {
+		  background: #2c4762;
+		  /*color: white;*/
+		  border-radius:10px;
+		}
+		.fa-linkedin {
+		  background: #2c4762;
+		  /*color: white;*/
+		  border-radius:10px;
+		}
+		.fa-github {
+		  background: #2c4762;
+		  /*color: white;*/
+		  border-radius:10px;
+		}
+		.fa-twitter {
+		  background: #2c4762;
+		  /*color: white;*/
+		  border-radius:10px;
+		}
 	    .download-btn {
 		    /*display: block;*/
 		    max-width: 200px;
@@ -32,16 +66,16 @@
 		    line-height: 25px;
 		}
 		.normal-btn {
-		    /*display: block;*/
+		    /*display: block;
 		    max-width: 120px;
-		    /*height: 20px;*/
+		    height: 20px;
 		    background: #4E9CAF;
 		    padding: 8px;
 		    text-align: center;
-		    border-radius: 5px;
-		    color: white;
+		    border-radius: 5px;*/
+		    /*color: white;*/
 		    font-weight: bold;
-		    line-height: 25px;
+		    /*line-height: 25px;*/
 		}
 	</style>
 </head>
@@ -151,10 +185,14 @@
 				
 				<div class="social-links">
 
-					<h4>Find me on Github & LinkedIn</h4>
-					<a target="_blank" href="https://github.com/MDMONIRHOSSAN">GitHub: @MDMONIRHOSSAN</a>
+					<h4>Find Me ON</h4>
+					<a target="_blank" href="https://www.linkedin.com/in/md-monir-hossan" class="fa fa-linkedin"></a>
+					<a target="_blank" href="https://github.com/MDMONIRHOSSAN" class="fa fa-github"></a>
+					<a target="_blank" href="https://join.skype.com/invite/YqhMUGOMdfJj" class="fa fa-skype"></a>
+					<a target="_blank" href="https://twitter.com/mdmonir01820" class="fa fa-twitter"></a>
+					<!-- <a target="_blank" href="https://github.com/MDMONIRHOSSAN">GitHub: @MDMONIRHOSSAN</a>
 					<br>
-					<a target="_blank" href="https://www.linkedin.com/in/md-monir-hossan">LinkedIn: @MdMonir</a>
+					<a target="_blank" href="https://www.linkedin.com/in/md-monir-hossan">LinkedIn: @MdMonir</a> -->
 					<!-- <img id="social_img" src="{{ url_for('static', filename='images/follow.jpg') }}"> -->
 					<h4>Professional Experience</h4>
 					<div id="professionals">
