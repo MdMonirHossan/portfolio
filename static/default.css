@@ -246,7 +246,7 @@ h6 { font-size: 16px;}
 }
 
 #preview{
-	width: 300px;
+	width: 330px;
 	border:1.5px solid #17a2b8;
 	background-color: var(--previewBg);
 	padding:15px;
@@ -300,6 +300,7 @@ h6 { font-size: 16px;}
 }
 #professionals{
 	/* display: flex; */
+	padding: 10px 0px 12px 25px;
 	justify-content: space-evenly;
 	background-color: var(--previewShadow);
 }
