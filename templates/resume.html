@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume - MD. Monir Hossan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='modern.css') }}">
+    <script src="{{ url_for('static', filename='js/modern-script.js') }}"></script>
+</head>
+<body>
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <h4>Themes</h4>
+        <div class="theme-buttons">
+            <div class="theme-btn" data-theme="light" style="background: #ffffff; border: 1px solid #ccc;"></div>
+            <div class="theme-btn" data-theme="dark-blue" style="background: #0f172a;"></div>
+            <div class="theme-btn" data-theme="dark-green" style="background: #064e3b;"></div>
+            <div class="theme-btn" data-theme="dark-purple" style="background: #1e1b4b;"></div>
+            <div class="theme-btn" data-theme="light-minimal" style="background: #f3f4f6; border: 1px solid #d1d5db;"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="resume-nav">
+        <div class="nav-content">
+            <h2 class="nav-logo">MD. MONIR HOSSAN</h2>
+            <a href="/" class="btn-back">← Back to Portfolio</a>
+        </div>
+    </nav>
+
+    <!-- Resume Container -->
+    <div class="resume-container">
+        <div class="resume-toolbar">
+            <button id="zoom-out" class="toolbar-btn">-</button>
+            <span id="zoom-level">100%</span>
+            <button id="zoom-in" class="toolbar-btn">+</button>
+            <a href="{{ url_for('static', filename='resume/Md_Monir_Hossan.pdf') }}" target="_blank" class="btn-download">
+                <i class="fa fa-download"></i> Download PDF
+            </a>
+        </div>
+        <div class="pdf-viewer">
+            <iframe
+                id="pdf-frame"
+                src="{{ url_for('static', filename='resume/Md_Monir_Hossan.pdf') }}"
+                style="width: 100%; height: 100%; border: none;">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
